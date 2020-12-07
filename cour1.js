@@ -42,6 +42,7 @@ var basicDown = basic;
 console.log(basicDown.toLowerCase());
 
 
+
 //SPLIT is split the word in to character
 var word = "banana";
 var letter = word;
@@ -81,4 +82,45 @@ var testAscii ="This is a string";
 console.log(testAscii.charCodeAt(1));
 
 // fromCharCode method does the opposite and return a character code ASCII
-console.log(testAscii.fromCharCode(86));
+console.log(String.fromCharCode(86)); //String is inbuild define variable
+
+//substring
+var subst = "Hello this is sub-string";
+
+console.log(subst.substring(3));
+console.log(subst.substring(3,10));
+
+
+// Escape Character method
+//longString  first method with concadenation
+var longstring = "This is a very longstring string which needs " + 
+                "to wrap across multiple lines because " + 
+                "Otherwise my code is unradable.";
+console.log(longstring);
+
+// backslash second with backslash
+ var backslash ="This is a very longstring string which needs \
+ to wrap across multiple lines because \
+ Otherwise my code is unradable.";
+ console.log(backslash);
+
+ // both the above method looks identical
+ 
+ // single quote '
+ // double quote "
+ //New line n
+ var newline ="This is a very longstring string which needs \n to wrap across multiple lines because \n Otherwise my code is unradable.";
+ console.log(newline);
+
+ //carriage return r
+var returnCar ="FirstLine  SecondLine\rThirdLine "; //\r or Return Carriage will go to the start of the current line and print characte
+ console.log(returnCar);
+ // vertical tab v
+
+ //tab t
+
+ //backspace b
+
+ //form feed f
+ var feedForm ="One  \fTwo Three ";
+ console.log(feedForm);
