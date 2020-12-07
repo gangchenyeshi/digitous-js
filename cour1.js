@@ -19,7 +19,11 @@ var familyName = 'Gangchen';
 console.log("My name is " + name + " " + familyName) ; //for concatenation two string can posible not two number
 
 
-//String length is count the character length in a string
+/*METHOD   String have in-build features(methods) to modify / read heir content
+EXAMPLE property like  .length , .replace etc
+
+*/
+//String length is count the character length in a string for  example password check length
 var testLength = "I'm very long!";
 console.log(testLength.length);
 
@@ -61,3 +65,20 @@ console.log(`I'am ${firstName} ${secondName}`); // if you using the TEMPLATE nev
 //single quote and double quote use
 console.log("I'am " + firstName);
 console.log('I am "Yeshi" ');
+
+
+//charAt method  use for if you want to access the character located at a specific place in a string,
+
+var firstTest = "Hello there !";
+var newTest = firstTest.charAt(0);
+console.log(newTest); //output is H 
+console.log(firstTest.charAt(3)); //return l
+
+//charCodeAt and FromCharCode
+// charCodeAt method will return you the ASCII code 
+
+var testAscii ="This is a string";
+console.log(testAscii.charCodeAt(1));
+
+// fromCharCode method does the opposite and return a character code ASCII
+console.log(testAscii.fromCharCode(86));
