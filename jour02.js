@@ -129,7 +129,7 @@ switch (password.length) {
 
 }
 
-
+//BONUS 
 //RANDOM
 
 var min = 1;
@@ -146,3 +146,35 @@ if  (random === 100) {
     console.log("Try again");
 }
 
+//BONUS 2
+//
+var month="October";
+switch (month) {
+    case "Decembre":
+        case "January":
+            case "February": {
+                console.log("Winter");
+                break;
+            }
+            
+    case "March":
+        case "April":
+            case "May": {
+                console.log("Spring");
+                break;
+            }
+            
+
+    case "June":
+        case "July":
+            case "August": {
+                console.log("Summer");
+                break; 
+            }
+              
+default:  {
+                console.log("Fall");
+    
+    }
+    
+}
