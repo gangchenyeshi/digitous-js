@@ -89,6 +89,22 @@ var bis = 219;
      console.log("Not good ");
  }
 
- // OR Condition 
- // one of the condition is true
- var password
+ // Condition 2
+ //if else condition
+ var password = "azeryY6";
+ if (password.length > 5) {
+     console.log("The password is secure");
+ } else {
+     console.log("Try again the Password");
+ }
+
+// Condition 3
+//If else if 
+var upperCase =false;
+if (password.length >= 8 && upperCase) {
+    console.log("Everything is good and strong password");
+}else if (password.length >=8 || upperCase ) {
+    console.log("Something is good but not strong ")
+} else {
+    console.log("Nothing is good not strong");
+}
