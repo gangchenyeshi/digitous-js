@@ -108,3 +108,28 @@ if (password.length >= 8 && upperCase) {
 } else {
     console.log("Nothing is good not strong");
 }
+
+var password = "qsdfsj_u"
+//switch 
+switch (password.length) {
+    case 8:
+        case 9:
+            case 10:{
+        console.log("Password is strong");
+        break;
+    }
+    case 6: 
+    case 7: {
+        console.log("Password is not strong");
+        break;
+    } default: {
+        console.log("Password is weak");
+        break;
+    }
+
+}
+
+
+//RANDOM
+
+var 
