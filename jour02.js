@@ -147,7 +147,7 @@ if  (random === 100) {
 }
 
 //BONUS 2
-//
+//SWITH CONDITION CHANGE THE month
 var month="October";
 switch (month) {
     case "Decembre":
@@ -178,3 +178,39 @@ default:  {
     }
     
 }
+
+//BONUS
+
+
+
+//Round
+var num = 1.9;
+var round = num;
+console.log(Math.floor(round)); //Math.round is and Math object to output the round from float to nearest integer
+
+var ceil = num; //Math.ceil is and Math object to output the round from float to above integer
+console.log(Math.ceil(ceil));
+
+
+
+var roundedNumber = 2.9;
+var ceilNumber = Math.ceil(roundedNumber);
+console.log(" ceil Number " + ceilNumber );
+var floorNumber = Math.floor(roundedNumber);
+console.log("floor number " + floorNumber);
+ 
+
+if(ceilNumber - roundedNumber < 0.5) { // if different between ceilnumber and roundedNumber is Less than 0.5 then it is Ceil number
+    console.log(ceilNumber);
+}
+else {  // other wise is floornumber
+    console.log(floorNumber);
+    }
+
+/*
+if(Math.round(roundedNumber)==roundedNumber) {
+    console.log("It is Round Number");
+} else {
+    console.log("it is Floor Or ceil Number");
+}
+*/
