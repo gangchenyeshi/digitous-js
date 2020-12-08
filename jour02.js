@@ -36,7 +36,7 @@ console.log(Math.min(2, 0, 21, 0)); //.min is out put the lowest number
 
 // ARITHMETIC OPERATION
 
-var test = 12;
+var test = 2;
 var bis = 5;
  
 console.log(test + bis); // addition
@@ -45,3 +45,31 @@ console.log(test * bis); //multiplication
 console.log(test / bis); //division
 console.log(test ** bis); //square root
 console.log(test % bis);
+
+//COMPARISON
+var test = 143;
+var bis = 219;
+ 
+console.log(test>bis);
+console.log(test<bis);
+console.log(test==bis);
+console.log(test>=bis);
+console.log(test<=bis);
+console.log(test===bis);
+console.log(test!=bis);
+console.log(test!==bis);
+
+
+var test = 143;
+var bis = 219;
+ if (test > bis) {
+     console.log('"test" is greater than "bis" ');
+ } else if (test === bis) {
+    console.log('Both are equal');
+ } else {
+     console.log(' "test" is smaller than "bis" ');
+ }
+
+
+ //CONDITION
+ 
