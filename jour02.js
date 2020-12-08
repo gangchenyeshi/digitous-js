@@ -71,6 +71,24 @@ var bis = 219;
  }
 
 
- //CONDITION
+ //IF CONDITION
+// in this example if you have a only two possible condition than you  use if and else
+ var limit = 50;
+ var score = 44;
+ if (score >= limit) {
+     console.log("Ok good!");
+ } else {
+     console.log("Oh nooo...");
+ }
 
- var limit
+ if(score >= limit) {
+     console.log("Very good!!")
+ } else if (score==limit){
+     console.log("Ok");
+ } else{
+     console.log("Not good ");
+ }
+
+ // OR Condition 
+ // one of the condition is true
+ var password
