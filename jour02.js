@@ -43,7 +43,7 @@ console.log(test + bis); // addition
 console.log(test - bis); //subtraction
 console.log(test * bis); //multiplication
 console.log(test / bis); //division
-console.log(test ** bis); //square root
+console.log(test ** bis); //Power root
 console.log(test % bis);
 
 //COMPARISON
@@ -72,4 +72,5 @@ var bis = 219;
 
 
  //CONDITION
- 
+
+ var limit
