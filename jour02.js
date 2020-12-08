@@ -34,3 +34,14 @@ console.log(Math.ceil(ceil));
 
 console.log(Math.min(2, 0, 21, 0)); //.min is out put the lowest number
 
+// ARITHMETIC OPERATION
+
+var test = 12;
+var bis = 5;
+ 
+console.log(test + bis); // addition
+console.log(test - bis); //subtraction
+console.log(test * bis); //multiplication
+console.log(test / bis); //division
+console.log(test ** bis); //square root
+console.log(test % bis);
