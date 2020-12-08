@@ -132,4 +132,17 @@ switch (password.length) {
 
 //RANDOM
 
-var 
+var min = 1;
+var max = 100;
+
+var random =Math.floor(Math.random()*(max - min + 1)+ min);
+ console.log(random);
+
+if  (random === 100) {
+    console.log("Yes I win !");
+} else if (random > 90 ){
+    console.log("So Close Try again ");
+} else {
+    console.log("Try again");
+}
+
