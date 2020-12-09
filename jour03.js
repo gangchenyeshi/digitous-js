@@ -48,3 +48,10 @@ console.log(ingredients.indexOf("butter"));
  numbers.sort();
  console.log("Ascending Number order : " + numbers);
 
+//BUCKLE  (LOOP)
+var total = 0;
+var limit = 10;
+
+for (var i = 0; i<= limit; i ++ ) {
+    console.log(total = i);
+}
