@@ -135,6 +135,7 @@ switch (password.length) {
 var min = 1;
 var max = 100;
 
+//Random 
 var random =Math.floor(Math.random()*(max - min + 1)+ min);
  console.log(random);
 
@@ -151,10 +152,11 @@ if  (random === 100) {
 var month="October";
 switch (month) {
     case "Decembre":
-        case "January":
-            case "February": {
-                console.log("Winter");
-                break;
+    case "January":
+    case "February": {
+        
+        console.log("Winter");
+        break;
             }
             
     case "March":
