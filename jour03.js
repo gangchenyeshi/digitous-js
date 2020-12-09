@@ -34,3 +34,17 @@ console.log(ingredients.indexOf("butter"));
  //remove first item
  objects.shift();
  console.log(objects);
+
+
+ //04  ORDER 
+ var numbers =[4, 10, 8, 12, 6];
+ console.log("Array numbers are : " + numbers);
+
+ //Reverse order
+ numbers.reverse();
+ console.log("Reverse Number order : " + numbers);
+
+ //ascending order
+ numbers.sort();
+ console.log("Ascending Number order : " + numbers);
+
