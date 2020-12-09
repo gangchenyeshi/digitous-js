@@ -52,14 +52,28 @@ console.log(ingredients.indexOf("butter"));
 var total = 0;
 var limit = 10;
 
-for (var i = 0; i<= limit; i ++ ) {
-    //console.log(total = i);
+for (var i = 1; i<= 10; i ++ ) {
+    console.log("i : " + i);
     total +=i;
-    console.log(total)
+    console.log("total is :" +total)
 
 }
-
-
-//console.log(i);
+console.log("total final :" +total)
 
 // Reverse 
+
+
+//BoNUS 1
+ for( i=0; i<=100; i++) {
+     if(i % 3 ===0 && i % 5 ===00) {
+         console.log("fizzbuzz");
+     } else if( i % 3 ===0) {
+        console.log("fizz"); 
+     }else if(i% 5 ===0) {
+         console.log("buzz");
+     } else if(i % 7 ===0) {
+        console.log("not display it");
+    } else {
+        console.log(i);
+    }
+ }

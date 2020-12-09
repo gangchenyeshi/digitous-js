@@ -28,7 +28,7 @@
         console.log(testLength.length);
 
         var test = testLength.indexOf("long");
-        console.log(test);
+        console.log("indexOf : " + test);
 
 
         //REPLACE is change or replace your value or index
