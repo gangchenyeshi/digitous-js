@@ -101,10 +101,10 @@ var sentence = "Hello konexio!";
 var sentenceLen=sentence.length;
 console.log(` Sentence Length : ${sentenceLen}`);
 var newsentence='';
-for (var i=sentenceLen; i>=0; i--) {
+for (var i=sentenceLen-1; i>=0; i--) {
     console.log(`value of i ${i}`);
     newsentence +=sentence[i];
 
-
 }
 console.log(`Reverse Character is:  ${newsentence} `);
+
