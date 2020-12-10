@@ -45,7 +45,7 @@ console.log(ingredients.indexOf("butter"));
  console.log("Reverse Number order : " + numbers);
 
  //ascending order
- numbers.sort();
+ numbers.sort((a,b)=> a-b);
  console.log("Ascending Number order : " + numbers);
 
 //BUCKLE  (LOOP)
@@ -55,13 +55,18 @@ var limit = 10;
 for (var i = 1; i<= 10; i ++ ) {
     console.log("i : " + i);
     total +=i;
+    //1) total = 0 + 1(i) = 1
+    //2) total = 1 + 2(i) = 3
+    //3) total = 3 + 3(i) = 6
+    //4) total = 6 + 4(i) = 10
+    //;....
+    //10) total = 45 + 10(i) = 55
     console.log("total is :" +total)
 
 }
 console.log("total final :" +total)
 
 // Reverse 
-
 
 //BoNUS 1
  for( i=0; i<=100; i++) {
@@ -77,3 +82,29 @@ console.log("total final :" +total)
         console.log(i);
     }
  }
+
+ // BONUS 2 avec WHILE LOOP
+ //var total = 0;
+ //var limit = 10;
+ //while (total <= 10) {
+    
+   //     total += i;
+     //   console.log("total first :"  total);
+    //}
+    
+ //console.log(total);
+
+
+
+ 
+var sentence = "Hello konexio!";
+var sentenceLen=sentence.length;
+console.log(` Sentence Length : ${sentenceLen}`);
+var newsentence='';
+for (var i=sentenceLen; i>=0; i--) {
+    console.log(`value of i ${i}`);
+    newsentence +=sentence[i];
+
+
+}
+console.log(`Reverse Character is:  ${newsentence} `);
