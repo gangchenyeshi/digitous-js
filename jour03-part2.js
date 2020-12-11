@@ -145,7 +145,6 @@ console.log(i);
 // print box1(0) + i=-1
 //box2++ -- 3 + 1 =4 so 4 divided by 2 is reminder 0 stop else and go back to for loop
 
-
 //i=-1 -- i> -4 yes
 // i-- =-1 -1 =-2
 //if i divisible by 2 which is reminder ===0
@@ -160,7 +159,6 @@ console.log(i);
 //if i divisible by 2 which is reminder ===0
 // print box1(-1) + -3=-4
 //box2++ -- 4 + 1 =5 so 5 divided by 2 is reminder 0
-//
 
 //i=-4 -- i> -4 NO
 //Print box1=-1
