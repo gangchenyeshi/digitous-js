@@ -48,7 +48,7 @@ console.log(`sum of dice >= 5 : ${dice}`);
 
 // Des Boites 
 //Using a paper and pencil, guess what the following code displays (forbidden to execute the code!)
-
+/*
 var box1 = 12;
 var box2 = 5;
 for (var i = 12; i < 14; i++) {
@@ -59,7 +59,7 @@ for (var i = 12; i < 14; i++) {
 console.log(box1);
 console.log(box2);
 console.log(i);
-
+*/
 //i=12-----i<14--- yes
 //i++ ---i=13
 //box1 (12)=box2(5)
@@ -78,4 +78,91 @@ console.log(i);
 //print Box2 =26
 //print i = 14
 
+//Des setiob
+//Using a paper and pencil, guess what the following code displays (forbidden to execute the code!)
+/*
+var box1 = 12;
+for (var i = 12; i !== 0; i = i - 3) {
+    console.log(box1);
+    box1 = box1 + i;
+}
+console.log(box1);
+console.log(i);
 
+*/
+//i=12 -- i!==0 yes
+// i-3 --  12-3 =9
+//print Box1 (12)
+//box1(21) = box1(12) + i(9)
+
+//i=9 -- i!==0 yes
+// i-3 --  9-3 =6
+//print Box1 (21)
+//box1(27) = box1(21) + i(6)
+
+//i=6 -- i!==0 yes
+// i-3 --  6-3 =3
+//print Box1 (27)
+//box1(30) = box1(27) + i(3)
+
+//i=3 -- i!==0 yes
+// i-3 --  3-3 =0
+//print Box1 (27)
+//box1(27) = box1(27) + i(0)
+
+//i=0 -- i!==0 No (true value)
+
+//print box1 =27
+//print i= 0
+
+
+
+//Encore de boites
+//Using a paper and pencil, guess what the following code displays (forbidden to execute the code!)
+
+/*
+var box1 = 0;
+var box2 = 3;
+for (var i = 0; i > -4; i--) {
+    if (i % 2 === 0) {
+        console.log(box1 + i);
+        box2++;
+    } else {
+        console.log(box2 + i);
+        box1--;
+    }
+}
+
+console.log(box1);
+console.log(box2);
+console.log(i);
+*/
+
+
+//i=0 -- i> -4 yes
+// i-- =O -1 =-1
+//if i divisible by 2 which is reminder ===0
+// print box1(0) + i=-1
+//box2++ -- 3 + 1 =4 so 4 divided by 2 is reminder 0 stop else and go back to for loop
+
+
+//i=-1 -- i> -4 yes
+// i-- =-1 -1 =-2
+//if i divisible by 2 which is reminder ===0
+// print box1(0) + i=-2
+//box2++ -- 4 + 1 =5 so 5 divided by 2 is reminder 1 
+//else
+//Box2 + i = 5 + -2 =3 
+//box1-- = -1
+
+//i=-2 -- i> -4 yes
+// i-- =-2 -1 =-3
+//if i divisible by 2 which is reminder ===0
+// print box1(-1) + -3=-4
+//box2++ -- 4 + 1 =5 so 5 divided by 2 is reminder 0
+//
+
+//i=-4 -- i> -4 NO
+//Print box1=-1
+//Print box 2= 5
+//print i =-4

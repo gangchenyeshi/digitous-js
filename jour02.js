@@ -57,7 +57,7 @@ console.log(test>=bis);
 console.log(test<=bis);
 console.log(test===bis);
 console.log(test!=bis);
-console.log(test!==bis);
+console.log(` cheche this : ${test!==bis}`);
 
 
 var test = 143;
