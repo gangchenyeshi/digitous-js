@@ -153,4 +153,23 @@ console.log(random);
  }
  console.log(`value of total :  ${total}`);
 
- 
+
+ //BONUS 4
+ var empty =[]; //declare empty box
+ var min = 0; //
+var max = 100;
+for(var i=0; i<=20; i++) {
+    var random=Math.floor(Math.random() * (max - min + 1)); //find the random number between 0 to 100 then
+    empty.push(random); //put 20 integer from min=0 and Max=100 with random method
+        // onece 20 is complite then ext the loop
+}
+console.log(empty); // print the 20 random number in empty array
+
+
+var arrayMax = empty[0]; // create a variable search from empty array
+for(i=1; i<20; i++) { 
+    if(empty[i]>arrayMax) {  // find the highest value in array index
+        arrayMax = empty[i]; // put this in arraymax variable
+    }
+}
+console.log(arrayMax); // prin the highest value
