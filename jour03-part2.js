@@ -30,3 +30,17 @@ for (i=100; i<=1000; i++) {
     
 }
 console.log(`value of i count  ${count}`);
+
+
+//CHANCEUX
+//roll a dice 20 times and display the sum of all the results greater than or equal to 5
+var min = 1;
+var max = 6;
+for(i=1; i<=20; i++) {
+    var dice=Math.floor(Math.random() * (max - min + 1));
+    console.log(`value of roll is : ${dice}`)
+    if (i >= 5) {
+        dice = dice + i;
+    }
+}
+console.log(`sum of dice >= 5 : ${dice}`);
