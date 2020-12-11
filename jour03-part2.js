@@ -44,3 +44,38 @@ for(i=1; i<=20; i++) {
     }
 }
 console.log(`sum of dice >= 5 : ${dice}`);
+
+
+// Des Boites 
+//Using a paper and pencil, guess what the following code displays (forbidden to execute the code!)
+
+var box1 = 12;
+var box2 = 5;
+for (var i = 12; i < 14; i++) {
+    box1 = box2;
+    console.log(box1 + box2);
+    box2 = box1 + i;
+}
+console.log(box1);
+console.log(box2);
+console.log(i);
+
+//i=12-----i<14--- yes
+//i++ ---i=13
+//box1 (12)=box2(5)
+//print 12 + 5
+//box2 (25)=12(box1) + 13(i)
+
+//i=13-----i<14--- yes
+//i++ ---i=14
+//box1 (12)=box2(25)
+//print 12 + 25
+//box2 (26)=12(box1) + 14(i)
+
+//i=14-----i<14--- No
+//exit loop
+//print Box1 =12
+//print Box2 =26
+//print i = 14
+
+
