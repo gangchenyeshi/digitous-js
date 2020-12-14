@@ -17,4 +17,3 @@ for(var i=0; i<5; i++) {
     number.push(random);
 }
 console.log(number);
-for(var i=number())
