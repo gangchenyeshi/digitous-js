@@ -32,7 +32,11 @@ if(cat2.isCute===true) {
     console.log("So cute");
 }
 
-var cats=[cat, cat2];
+var cats={
+    cat, 
+    cat2
+};
+console.log(` cats are : ${cats}`);
 console.log(cat.age);
 console.log(cat2.isCute);
 
@@ -44,10 +48,18 @@ console.log(cat2.isCute);
 
 
 function checkIfEven(num){
-    if(num % 2 ===0){
-        console.log(`Num is even : ${num}`);
-    }else {
-        console.log(`Num is odd : ${num}`);
+    for(num=3; num<=20; num= num + 3){
+        if(num % 2 ===0){
+            console.log(`Num is even : ${num}`);
+        }else {
+            console.log(`Num is odd : ${num}`);
+        }
     }
+    
+    return;
+    
 }
 checkIfEven(3);
+
+
+
