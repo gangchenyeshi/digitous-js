@@ -77,10 +77,33 @@ function compare(num1, num2) {
                 console.log(`num1 is bigger : ${num1}`);
             } else if(num2 > num1) {
                 console.log(`num2 is bigger : ${num2}`);
+                return num1;
             } else {
                 console.log(`Both are the same : ${num1} = ${num2}`);
+                return num2;
             }
     
 }
 
-compare(20,10);
+compare(20,20);
+
+
+//05 ADD UP
+//- Créez une fonction `addUp` qui reçoit un paramètre `num`
+//- À l'aide d'une boucle, ajouter les chiffres de 1 à `num`
+//- Appelez votre fonction avec le chiffre 12 et vérifiez que vous obtenez 78 
+
+function addUp(num){
+    var result = 0;
+    for(var i=1; i<=num; i++) {
+        result =result + i;
+    }
+    console.log(result);
+}
+addUp(12);
+
+//06 TIME
+//- Créez une fonction `format` qui reçoit un paramètre `num` qui représente des secondes
+//- Faites en sorte que la fonction retourne un format `heures : minutes : secondes`
+//- Appelez votre fonction avec l'argument `3700` et vérifiez que vous obtenez `1:1:40`
+
