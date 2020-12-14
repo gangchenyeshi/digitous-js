@@ -28,6 +28,10 @@ var cat2 = {
     age: 2,
     isCute: false
 }
+if(cat2.isCute===true) {
+    console.log("So cute");
+}
 
 var cats=[cat, cat2];
-console.log()
+console.log(cat.age);
+console.log(cat2.isCute);
