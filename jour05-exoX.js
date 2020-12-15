@@ -31,8 +31,7 @@ if(process.argv.length===5) {
 //- Vous devrez donner l'argument dans le terminal en appelant le programme
 
 //⇒ Si vous ne donnez pas d'argument, le programme doit afficher "error" dans la console//
-
-
+/*
 function multiply(num) {
     //var num=2;    
     var result = 1;
@@ -44,3 +43,11 @@ function multiply(num) {
 }
 console.log(process.argv);
 multiply(process.argv[2]);
+*/
+
+
+//03 
+var {multiply, addition} = require("./table-utils.js");
+
+multiply();
+addition();
