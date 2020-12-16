@@ -130,6 +130,17 @@ function format(num) {
 }
 format(3700);
 
+//OR
+function format(num) {
+    //124 secondes = 2m et 4s
+    //1 minutes =60s
+    /*
+    console.log(Math.floor(num/3600)); //3600 secondes ==heures
+    console.log(num % 3600); //num=secondes  than means num(3600)=3600 secondes
+    console.log(Math.floor(num %3600 /60))
+    */
+}
+
 //BONUS 01
 //- Créez une fonction `generatePassword` qui reçoit un paramètre `num`
 //- La fonction génère un mot de passe aléatoire, avec autant de lettres que la valeur de `num`
