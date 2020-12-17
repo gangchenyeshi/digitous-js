@@ -16,21 +16,25 @@ sortLetter("konexio");
 // - The function returns true if there are as many x as there are o, otherwise it returns false
 // - Check that the "xxxoooox" argument triggers a true, and that "xox" triggers a false
 
-function countEach(xo) {
-    var newString=xo.split('');
-    console.log(newString);
-    /*
-    var varX="x";
-    var countx=newString.indexOf(varX);
-    console.log(countx);
-  
-    var varO="o";
-    var counto=newString.indexOf(varO);
-    console.log(counto);
-    */
-    var countX=newString.filter(i=>i==="x").length;
-    console.log(`number of x : ${countX}`);
-    var countO=newString.filter(i=>i==="o").length;
-    console.log(`Number of x : $(countO)`)
+function countEach(string) {
+    var newString=string.split('');
+    //console.log(newString);
+   var countx=0;
+   var counto=0;
+    for(var i=1; i<=string.length; i++) {
+       if(newString[i]==="x") {
+        countx =countx +1;  
+       }else {
+           counto = counto +1;
+       }
+    }
+    console.log(`count x : ${countx}`);
+    console.log(`count o : ${counto}`);
+
+    if(countx > counto) {
+        console.log("true")
+    }else{
+        console.log("false")
+    }
 }
-countEach("xxxoooox");
+countEach("oxox");
