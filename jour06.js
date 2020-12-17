@@ -11,26 +11,35 @@ var birthday =new Date("12/20/2020");//month, day, years
 //- Create a `formatDate` function which receives a string as a parameter (in yyyy-mm-dd format)
 // - The function must return the date in dd / mm / yyyy format
 // - Call the function and display its result in the console
-var test= new Date();
-console.log(test);
-// new Date("2020-12-16");
-function formatDate(yyyy, mm, dd ){
-    //var date=new Date();
+
+function formatDate(dateString ){
+    var date=new Date(dateString); //dateString string parameter are call in date variable
     //console.log(date);
-    console.log((`${dd} / ${mm} / ${yyyy}`));
+    var days = date.getDate(); // var days is getDate from date var 
+    var months = date.getMonth() + 1;
+    var years = date.getFullYear();
+    console.log((`${days} / ${months} / ${years}`));
 }
-formatDate(2020, 12, 7);
+formatDate("2020-12-31");
 
 
 
-/*
-function formatDate(aaaa, mm,jj) {
-    //var days=jj.getDate();
-    //var months=mm.getMonth();
-    //var years=aaaa.getFullYear();
-    console.log(`${jj} / ${mm} / ${aaaa}`);
- 
+
+// 02 AGE
+// - Create a `calculateAge` function which receives as parameter a date in string format (which serves as date of birth)
+// - The function must calculate the age of the person (in years) born at that time, based on today's date
+// - Call the function and display its result in the console
+// Reminder: The dates start with the year 1970!
+//function calculateAge(date)
+//calculateAge(1970);
+
+function calculateAge(dateString) {
+    var birthday= new Date(dateString);
+    var currentDate = new Date();
+    var different=currentDate - birthday;
+    var age=new Date(different);
+    console.log(age.getFullYear() - 1970);
 }
-console.log(process.argv);
-formatDate(process.argv[2], process.argv[3], process.argv[4], );
-*/
+calculateAge("1981-06-22");
+
+
