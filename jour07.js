@@ -21,7 +21,7 @@ function countEach(string) {
     //console.log(newString);
    var countx=0;
    var counto=0;
-    for(var i=1; i<=string.length; i++) {
+    for(var i=0; i<string.length; i++) {
        if(newString[i]==="x") {
         countx =countx +1;  
        }else {
@@ -37,4 +37,35 @@ function countEach(string) {
         console.log("false")
     }
 }
-countEach("oxox");
+countEach("xox");
+
+//03 - Palindrome
+
+// - Create a `checkPal` function which receives a string as a parameter
+// - The function returns "Palindrome!" if the word reads both ways, otherwise it returns "Nope"
+// - Check that you get a positive with the "racecar" argument but not with "laptop"
+
+function checkPal(string){
+    var newSplitString = string.split('');
+    console.log(`Split String : ${newSplitString}`);
+    var newReverseString = newSplitString.reverse();
+    console.log(`Reverse string : ${newReverseString}`);
+    var newJoinString = newReverseString.join("");
+    console.log(`Join string : ${newJoinString}`);
+
+    
+    if(string === newJoinString) {
+            console.log("Palindrome!");
+        } else {
+            console.log("Nope");
+        }
+}
+checkPal("abcdfcba");
+
+
+
+
+
+
+
+
