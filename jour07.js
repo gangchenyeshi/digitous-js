@@ -67,12 +67,30 @@ checkPal("abcdfcba");
 // - The function returns a string with reverse case: an uppercase will become lowercase and vice versa
 // - Call your function with the argument "Hello World" and verify that you get "hELLO wORLD"
  function swap(string) {
+    /*
     var newString = string.split('');
     console.log(newString);
     var lowerCase = string.toLowerCase();
     console.log(lowerCase);
     var upperCase = string.toUpperCase();
     console.log(upperCase);
+    */
+    var reverseString = '';
+    var i = 0;
+    while (i < string.length) {
+        var n = string.charAt(i);
+        console.log(n);
+        if(n == n.toUpperCase()) {
+            n = n.toLowerCase();
+        } else {
+            n = n.toUpperCase();
+        }
+        i +=1;
+        reverseString +=n;
+//        console.log(n);
+    }  
+    console.log(reverseString);
+    //return reverseString;      
  }
  swap("AbCd");
 
