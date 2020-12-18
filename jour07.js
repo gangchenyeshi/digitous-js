@@ -75,11 +75,11 @@ checkPal("abcdfcba");
     var upperCase = string.toUpperCase();
     console.log(upperCase);
     */
-    var reverseString = '';
+    var reverseString = '';//blank string for change CASE
     var i = 0;
     while (i < string.length) {
         var n = string.charAt(i);
-        console.log(n);
+        //console.log(n);
         if(n == n.toUpperCase()) {
             n = n.toLowerCase();
         } else {
@@ -93,6 +93,35 @@ checkPal("abcdfcba");
     //return reverseString;      
  }
  swap("AbCd");
+
+ //Bonus 1
+// - Create a `makeItSpongeBob` function which receives a string as a parameter
+  // - The function returns a string with the same text alternating upper / lower case
+  // - Call your function with the argument "Javascript is easy" and check the result
+
+  function makeItSpongeBob(string) {
+    var doubleCase = '';
+    var i = 0;
+    while (i < string.length) {
+        var n = string.charAt(i);
+        //console.log(`value of n : ${n}`);
+        if(n == n.toUpperCase()) {
+            n = n.toLowerCase();
+            console.log(n);
+        }
+        doubleCase +=n;
+        if(n == n.toLowerCase()) {
+            n = n.toUpperCase();
+            console.log(n);
+        }
+        doubleCase +=n;
+        
+        
+        i++;
+    }
+    console.log(doubleCase);
+  }
+  makeItSpongeBob("YYYY");
 
 
 
