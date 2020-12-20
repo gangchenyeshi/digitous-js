@@ -111,3 +111,84 @@ var limit = 70;
  }
 
 
+//BONUS
+//- Créez une variable `random` qui contient une valeur aléatoire entre 1 et 6 (nombres entiers seulement)
+//- À l'aide d'une condition, affichez "Yes I win !" si `random` est égal à 6, et "So close..." dans les autres cas
+
+//Create a variable `random` that contains a random value between 1 and 6 (whole numbers only)
+// - Using a condition, display "Yes I win!" if `random` is equal to 6, and" So close ... "in the other cases
+var max = 6;
+var min = 1; 
+var random = Math.floor(Math.random() * (max - min + 1)+min);
+ console.log(random);
+ if (random ===6) {
+     console.log("Yes I win!");
+    }else{
+      console.log("So Close ...");  
+    }
+
+
+//BONUS 2
+//- Créez une variable `month` de valeur `"January"`
+//- À l'aide d'un switch, affichez "Winter", "Spring", "Summer" ou "Fall" selon la valeur du mois
+//- Changez la valeur de `month` pour changer le résultat
+
+var month ="September";
+switch(month) {
+    case "January":
+    case "February":
+    case "December":
+        console.log("Winter");
+        break;
+
+    case "March":
+    case "April":
+    case "May":
+        console.log("Spring");
+        break;
+            
+    case "June":
+    case "July":
+    case "August":
+        console.log("Summer");
+        break;
+     default:
+         console.log("Fall");       
+
+}
+
+if(month ==="January" || month ==="February" || month ==="December") {
+    console.log("Winter !");
+} else if(month ==="March" || month ==="April" || month ==="May") {
+    console.log("Spring !");
+} else if(month ==="June" || month ==="July" || month ==="August") {
+    console.log("Summer !");
+} else {
+    console.log("Fall");  
+}
+
+//BONUS 3
+//- Create a `roundedNumber` variable of value` 3.6`
+// - Using only `Math.floor ()`, `Math.ceil ()`, math operations and an `if () {} else {}` reproduce the result of `Math.round ()`
+// - Change the value of `roundedNumber` (with 3.3, 3.8 and 12.4) to change the result
+
+var roundedNumber = 3.8;
+var decimalValue = roundedNumber - Math.floor(roundedNumber); 
+console.log(decimalValue);
+
+var result = 0;
+if (decimalValue >= .5) {
+    result = Math.ceil(roundedNumber);//Math.ceil is function always rounds a number up to the next largest integer.
+} else {
+    result = Math.floor(roundedNumber);//Math.floor is function always rounds a number up to the next Lowest integer.
+}
+console.log(result, Math.round(roundedNumber));
+
+
+//BONUS 4
+// - We will start to do things a little more concrete (and suddenly more complicated!) And to program an artificial intelligence (word which is scary but do not worry)
+// - Start by creating an account on [CodinGame] (https://www.codingame.com/) and share your nickname with your favorite trainer
+// - Try to solve the following problem: [Thor vs Thunder] (https://www.codingame.com/ide/puzzle/power-of-thor-episode-1)
+
+
+
