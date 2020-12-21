@@ -87,28 +87,79 @@ for (i=0; i <sentence.length; i++) {
 console.log(reverseSentence);
 
 //BONUS
-//- Créez une boucle qui part de 0 et s'arrête à 100
-//- À chaque itération :
-//- Si `i` est un multiple de 3 ⇒ affichez "fizz"
-//- Si `i` est un multiple de 5 ⇒ affichez "buzz"
-//- Si `i` est un multiple de 3 et 5 ⇒ affichez "fizzbuzz"
-//- Si `i` est un multilple de 7 ⇒ ne l'affichez pas
-//- Sinon, affichez la valeur de i
+//- Create a loop that starts from 0 and ends at 100
+// - At each iteration:
+// - If `i` is a multiple of 3 ⇒ print" fizz "
+// - If `i` is a multiple of 5 ⇒ print" buzz "
+// - If `i` is a multiple of 3 and 5 ⇒ print" fizzbuzz "
+// - If `i` is a multilple of 7 ⇒ don't print it
+// - Otherwise, display the value of i
 
-
+for (var i = 0; i <=100; i++) {
+    if(i % 3 === 0 && i % 5 ===0 ){
+        console.log(`${i} : Fizzbuzz`);
+    } else if(i % 3 === 0 ) {
+        console.log(`${i} : Fizz`);
+    }  else if(i % 5 === 0 ) {
+        console.log(`${i} : Buzz`);
+    } else if(i % 7 === 0 ) {
+        //console.log(`${i} : Don't print`);
+    } else {
+        console.log(i);
+    }
+}
 
 //BONUS 2
 //- Reproduisez l'exercice 5 avec une boucle while
+//Create a `total` variable of value` 0` and a `limit` variable of value` 10`
+// - Using a for loop going from`0` to `limit`, increase the value of` total` by adding the value of `i` to it (i is the index of your loop)
+// - Display the value of `total` after your loop, total must be 55 = 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10
 
-
+var total = 0;
+var limit = 10;
+var i=0; 
+while(i<=10) {
+    total = total + i;
+    i++;
+    console.log(total);
+}
+console.log(`total value of sum : ${total}`);
 
 //BONUS 3
 //- Créez un tableau avec le nom de chacun de vos camarades de promo
 //- Affichez aléatoirement le nom de la personne tiré au sort
 
+// - Create a table with the name of each of your classmates
+// - Randomly display the name of the person drawn at random
+ var promo4=['Sebastien', 'Elisabeth','Yeshi', 'Hassan', 'Nicolas', 'Houra','Saurav', 'Damir', 'Mahmoudou', 'Adam', 'Ewa', 'Atif','Mosindo', 'Ahmed', 'Thi', 'Bah', 'Mohamed', 'Kitty', 'Allan', 'Adama'];
+  var min =0;
+  var max =promo4.length-1;
+  //console.log(max);
+var random=Math.floor(Math.random() * (max - min + 1));
+console.log(promo4[random]);
 
 //BONUS 4
-//- Creez un tableau vide
-//- Avec une boucle for, ajoutez 20 entiers aléatoires entre 0 et 100
-//- Affichez ce tableau
-//- Avec une deuxième boucle for, trouvez l'entier le plus grand de votre tableau (pas le droit d'utiliser Math.max)
+// - Create an empty array
+// - With a for loop, add 20 random integers between 0 and 100
+// - Display this table
+// - With a second for loop, find the largest integer in your array (not allowed to use Math.max)
+
+var blank =[];
+var min = 0;
+var max = 100;
+for (var i=0; i<20; i++) {
+    var random = Math.floor(Math.random() * (max - min + 1));
+    //console.log(random);
+    blank.push(random);
+    //console.log(blank);
+}
+console.log(blank);
+
+var highestValue = blank[0];
+for(var i = 1; i<=20; i++) {
+    if(highestValue < blank[i]) {
+        highestValue =blank[i];
+        
+    }
+}
+console.log(highestValue);
