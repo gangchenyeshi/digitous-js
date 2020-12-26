@@ -155,21 +155,52 @@ function timecalculator(num) {
     console.log(`${hours} : ${minutes} : ${seconds}`);
 }
 timecalculator(3700);
+
 //BONUS
 //- Créez une fonction `generatePassword` qui reçoit un paramètre `num`
-//- La fonction génère un mot de passe aléatoire, avec autant de lettres que la valeur de `num`
-//- Le mot de passe contiendra uniquement des lettres majuscules
-//- Si `num` est plus petit que 6 et plus grand que 15, la fonction retourne "error"
-
-
+// - The function generates a random password, with as many letters as the value of `num`
+// - The password will contain only uppercase letters
+// - If `num` is less than 6 and greater than 15, the function returns" error "
 //Astuce : Vous vous souvenez de la table ASCII ? 😉
+function generatePassword(num){
+    var max=122;
+    var min=48;
+    var password='';
+    for(var i=0; i<num; i++) {
+        var random=Math.floor(Math.random() * (max-min+1)+min);
+        while(random>=58 && random <=64) {
+            random=Math.floor(Math.random() * (max-min+1)+min);
+        }
+        var letter=String.fromCharCode(random);
 
-
+        password += letter;
+    }
+    console.log(password);
+}
+generatePassword(10);
 
 //BONUS 02
-//- Créez une fonction `launchDice` qui reçoit un paramètre `numberOfDice`
-//- La fonction va lancer aléatoirement `numberOfDice` dés et retourner leur somme
-//- Appelez la fonction deux fois avec pour parametre 5, une fois pour le `joueur1` et `joueur2`
-//- Afficher le joueur gagnant (celui ayant le plus grand score)
+// - Create a `launchDice` function which receives a` numberOfDice` parameter
+// - The function will randomly throw `numberOfDice` dice and return their sum
+// - Call the function twice with parameter 5, once for `player1` and` player2`
+// - Display the winning player (the one with the highest score)
 
-
+function launchDice(numberOfDice) {
+    var max = 6;
+    var min = 1;
+    var sum ='';
+    for(var i=1; i<numberOfDice; i++) {
+        var random=Math.floor(Math.random() * (max - min + 1) + min);
+        sum+=random;
+    }
+    return sum;
+}
+var player1 = launchDice(5);
+var player2 = launchDice(5);
+if(player1 > player2) {
+    console.log(`Player1 is Win : ${player1}`);
+}else if(player2 > player1) {
+    console.log(`Player2 is Win : ${player2}`);
+} else{
+    console.log(`Both the player are equal`);
+}
