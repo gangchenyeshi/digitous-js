@@ -204,3 +204,5 @@ if(player1 > player2) {
 } else{
     console.log(`Both the player are equal`);
 }
+
+
