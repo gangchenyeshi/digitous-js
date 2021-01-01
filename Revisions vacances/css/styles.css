@@ -1,0 +1,193 @@
+body {
+    
+}
+.navbarbackground {
+    border-bottom: 1px solid rgb(218, 201, 201);
+    margin-top: 7px;
+}
+#brandname{
+    font-size: 16px;
+}
+
+#navtext li a{
+    color:black;
+    font-weight: 600;
+}
+
+.search {
+    display: flex;
+    flex-direction: row ;
+    justify-content: center;
+    
+}
+.npmlogo {
+    font-size: 50px;
+    margin-right:40px;
+    color: #000;
+}
+.search i {
+    padding: 20px;
+}
+.search i, .search input {
+    height: 60px;
+    background-color: rgb(233, 224, 224);
+    align-items: center;
+    border: none;
+    border-radius: 0;
+}
+.buttonlogin{
+    border-radius: 0;
+    height: 60px;
+    min-width: 120px;
+    margin-left: 20px;
+    padding: 0px 20px;
+}
+
+.login {
+    display: flex;
+    flex-direction: row ;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbarbackground2 {
+    background-color: #fff;
+    min-height: 40px;
+}
+
+.mainimg {
+    background-image: url("../img/ck3uwvv67mydydr74ea00ip4j-bg-stripes.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0;
+}
+.secondimg {
+    background-image: url("../img/ck3uweazy72ye8874y9kkxnx1-gak.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 160px;
+}
+
+.height {
+    min-height: 60px;
+    margin: 10px;
+}
+.buttondefine{
+    padding: 1rem 2rem;
+    
+    border-radius: 0;
+}
+.login {
+    margin: 10px;
+}
+
+.jumbotron-flex {
+    color: #fff;
+    text-align: center;
+    padding-top: 100px;
+}
+.jumbotron-flex h1 {
+    font-size: 84px;
+    font-weight: bold;
+    padding-bottom: 55px;
+}
+.jumbotron-flex p {
+    padding-bottom: 7px;
+    padding-top: 10px;
+}
+
+.buttoncolor {
+    margin: 30px auto;
+    background-color: #c12127;
+    border: 0;
+    color: #fff;
+    font-weight: bold;
+    border-bottom: solid 5px #fa8717;
+    height: 60px;
+    width: 190px;
+    margin: auto 5px 50px 5px;
+}
+.buttoncolorpink {
+    background-color: #c12127;
+    background: #e81aa8;
+    border-bottom: solid 5px #b30ad2;
+    
+}
+.bringbox {
+    padding: 20px 16px 64px 16px;
+}
+.bring {
+    text-align: center;
+    padding: auto 5px;
+    
+}
+.bring p {
+
+}
+
+
+.thirdimg {
+    background-image: url("../img/ck3uwg3a8731988744oecrjxu-weloveopensource-bg-800-2x.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 64px 16px;
+    color: #fff;
+    text-align: center;
+    
+}
+.thirdimg > .love {
+    color: #fff;
+}
+
+
+
+.brand {
+    padding: 60px 30px;
+    text-align: center;
+    
+}
+.brand h4 {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.logo-brand{
+    width: 100%;
+    max-width: 100%;
+    margin: 20px auto;
+}
+
+footer {
+    border-top: 1px solid rgb(212, 197, 197);
+    padding: 50px;
+}
+.npmlogoimg {
+    max-width: 45px;
+    border-radius: 5px;
+    margin: auto;
+}
+footer ul {
+    padding: 0;
+}
+footer ul li {
+    list-style:none;
+    padding: 5px 10px;
+    color: rgb(110, 91, 91);
+}
+
+@media screen and (min-width: 960px) {
+    .brand {
+         padding: 30px 25%;
+    }
+ 
+    .brand h4, .bring h3{
+        font-weight: bold;
+        font-size: 2.2rem;
+    }   
+    .textCenter p, .bring p, .bring h3{
+        margin: 30px 30%;
+    }
+
+}
