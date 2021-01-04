@@ -28,25 +28,15 @@ console.log(double);
 
 var longNames = [
 	{
-		name: "Jane Doe",
-		email: "jane.doe@example.com"
+		firstName: "Jane",
+		lastName: "Doe"
 	},
 	{
-		name: "John Smith",
-		email: "john.smith@example.com"
+		firstName: "John",
+		lastName: "Smith"
 	}
 ];
-//- Créez une variable `shortNames` qui appellera la méthode `.map()` pour contenir une version compacte de `longNames` :
-/*
-var shortNames = LongNames.map(function(element) {
-   
-    return element;
+var shortName = longNames.map(function(element) {
+    return {name:element.firstName + ' ' + element.lastName};
 })
-console.log(shortNames);
-*/
-
-var shortNames = longNames.filter(function(element) {
-    return element;
-
-})
-console.log(shortNames);
+console.log(shortName);
