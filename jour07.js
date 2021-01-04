@@ -11,3 +11,15 @@ fs.readFile("./jour07.txt", function(error, data) {
     console.log(data.toString());
     
 })
+
+//02 MAP DOUBLE
+// - Create an `array` variable containing an array that will contain the values` 1`, `2`,` 3`, `4` and` 5`
+// - Create a `double` variable which will call the` .map () `method to hold the double values of` array`
+// - Display the values of `double` in the console
+var array = [2, 3, 4, 5];
+var double = array.map(function(num)  {
+    return num * 2;
+})
+console.log(double);
+
+
