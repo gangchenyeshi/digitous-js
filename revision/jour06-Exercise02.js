@@ -17,3 +17,5 @@ function calculateAge(birthDay) {
     
 }
 console.log(calculateAge("1959 / 03 / 18"));
+
+

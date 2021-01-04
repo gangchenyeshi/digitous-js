@@ -4,7 +4,8 @@
   "description": "",
   "main": "jour01.js",
   "dependencies": {
-    "alpha-sort": "^3.1.0"
+    "alpha-sort": "^3.1.0",
+    "prompt": "^1.1.0"
   },
   "devDependencies": {},
   "scripts": {

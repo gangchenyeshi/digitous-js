@@ -21,6 +21,16 @@ console.log(birthday);
 // - The function must return the date in dd / mm / yyyy format
 // - Call the function and display its result in the console
  
+function formatDate(dateString) {
+    var date = new Date(dateString);
+    var days = date.getDate();
+    var months = date.getMonth() + 1;
+    var years = date.getFullYear();
+     return (`${days} / ${months} / ${years}`);
+}
+console.log(formatDate("2021-01-03"));
+
+/*
 function formatDate(stringDate) {
     var date = new Date(stringDate);
     var days = date.getDate();
@@ -30,3 +40,4 @@ function formatDate(stringDate) {
     return `${days} / ${months} / ${years}`;
 }
 console.log(formatDate("2020-12-31"));
+*/
