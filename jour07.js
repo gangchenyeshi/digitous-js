@@ -22,4 +22,31 @@ var double = array.map(function(num)  {
 })
 console.log(double);
 
+//03-MAP NAMES
+//- Créez une variable `longNames` contenant la valeur suivante :
+//- Créez une variable `shortNames` qui appellera la méthode `.map()` pour contenir une version compacte de `longNames` :
 
+var longNames = [
+	{
+		name: "Jane Doe",
+		email: "jane.doe@example.com"
+	},
+	{
+		name: "John Smith",
+		email: "john.smith@example.com"
+	}
+];
+//- Créez une variable `shortNames` qui appellera la méthode `.map()` pour contenir une version compacte de `longNames` :
+/*
+var shortNames = LongNames.map(function(element) {
+   
+    return element;
+})
+console.log(shortNames);
+*/
+
+var shortNames = longNames.filter(function(element) {
+    return element;
+
+})
+console.log(shortNames);
