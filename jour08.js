@@ -6,26 +6,28 @@
 var request = require('request');
 
 var countriesNames = [];
-request.get("https://restcountries.eu/rest/v2/name/france", function(error,respont, body) {
+request.get("https://restcountries.eu/rest/v2/all", function(error,response, body) {
     var getCountries =JSON.parse(body);
-    console.log(getCountries[0].name);
-    var countrie = getCountries[0].name;
-    countriesNames.push(countrie);
-
-
-    request.get("https://restcountries.eu/rest/v2/name/italy", function(error,respont, body) {
-    var getCountries =JSON.parse(body);
-    console.log(getCountries[0].name);
-    })
+    //console.log(getCountries);
+   
     
-    request.get("https://restcountries.eu/rest/v2/name/spain", function(error,respont, body) {
-    var getCountries =JSON.parse(body);
-    console.log(getCountries[0].name);
-    })
+    for(var i=0; i<getCountries.length; i++) {
+        countriesNames.push(getCountries[0].name);
+    }
 
-    request.get("https://restcountries.eu/rest/v2/name/germany", function(error,respont, body) {
-    var getCountries =JSON.parse(body);
-    console.log(getCountries[0].name);
-    })
-})
-console.log(`List of countries name are : ${countriesNames}`);
+    console.log(`List of countries name are : ${countriesNames}`);
+
+});
+
+
+
+//02-CHUCK NORRIS
+// Using the following API (read the documentation carefully): [https://api.chucknorris.io/)
+// - Create an asynchronous `getFact` function which will retrieve a random Chuck Norris joke each time the function is started, and which will display it in the console
+
+request.get("https://api.chucknorris.io/jokes/random", function(error, response, body) {
+    var getFact =JSON.parse(body);
+   // console.log(getFact);
+    console.log(getFact.value); //It is object no need to type [0] because type direct access
+
+});
