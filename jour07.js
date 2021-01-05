@@ -3,6 +3,7 @@
 - Dans le fichier `jour07.js`, à l'aide du module `fs`, affichez le contenu de `jour07.txt` dans la console
 
 */
+/*
 var fs = require("fs");
  
 fs.readFile("./jour07.txt", function(error, data) {
@@ -10,7 +11,7 @@ fs.readFile("./jour07.txt", function(error, data) {
     console.log(data.toString());
     
 })
-
+*/
 //02 MAP DOUBLE
 // - Create an `array` variable containing an array that will contain the values` 1`, `2`,` 3`, `4` and` 5`
 // - Create a `double` variable which will call the` .map () `method to hold the double values of` array`
@@ -119,7 +120,7 @@ console.log(cakeChocolates);
 
 
 
-//bonus
+//BONUS
 // Do you know the game of ** Hangman **? Today we will code it using the npm prompt module! A little reminder of the rules:
 // - A mystery word is proposed, each letter is indicated by an underscore `_`
 // - The player has ten attempts to guess the mystery word, and for each attempt he suggests a letter:
@@ -128,4 +129,23 @@ console.log(cakeChocolates);
 // ⇒ Display a message in case of victory or defeat
 
 var prompt = require("prompt");
-var randomWord =require("random-words")
+var randomWords =require("random-words");
+
+var wordLength = 5;
+var mysteryWord = randomWords({ exactly: 1, maxLength: wordLength })[0];
+//console.log(mysteryWord);
+while (mysteryWord.length !== wordLength) {
+	mysteryWord = randomWords({ exactly: 1, maxLength: wordLength })[0];
+	
+};
+//console.log(`In while loop : ${mysteryWord}`);
+var schema = {
+    properties: {
+      name: {
+        pattern: new RegExp(`^[a-z]{1}$`), 
+        description: "Enter a letter",
+        required: true
+      },
+    },
+  };
+  
