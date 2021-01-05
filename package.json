@@ -5,7 +5,8 @@
   "main": "jour01.js",
   "dependencies": {
     "alpha-sort": "^3.1.0",
-    "prompt": "^1.1.0"
+    "prompt": "^1.1.0",
+    "request": "^2.88.2"
   },
   "devDependencies": {},
   "scripts": {
