@@ -73,26 +73,26 @@ var player1Score = 0;
 var player2Score = 0;
 
 for(var i=1; i<=21; i++) {
+    /*
     var max = 20;
     var min = 16;
-    var cardMax =10;
-    var cardMin = 1;
     var bankRandom1 = Math.floor(Math.random() * (max - min + 1) + min);
         //console.log(`Player 1 Bank Random : ${bankRandom1}`);
     var bankRandom2 = Math.floor(Math.random() * (max - min + 1) + min);
         //console.log(`Player 2 Bank Random : ${bankRandom2}`);
-
+    */
+    var cardMax =10;
+    var cardMin = 1;
     var player1RandomCard = Math.floor(Math.random() * (cardMax - cardMin + 1) + cardMin);
     //console.log(`Player 1 Random Card : ${player1RandomCard}`);
-    player1Score.push(player1RandomCard);
+    player1Score += player1RandomCard;
 
     var player2RandomCard = Math.floor(Math.random() * (cardMax - cardMin + 1) + cardMin);
     //console.log(`Player 2 Random Card : ${player2RandomCard}`);
-    player2Score.push(player2RandomCard);
+    player2Score += player2RandomCard;
     if(player1Score => 21) {
         console.log(`Player1 Win !`);
-    }
-    if(player2Score => 21) {
+    } else if(player2Score => 21) {
         console.log(`Player2 Win !`);
     }
 }
