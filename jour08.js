@@ -9,10 +9,8 @@ var countriesNames = [];
 request.get("https://restcountries.eu/rest/v2/all", function(error,response, body) {
     var getCountries =JSON.parse(body);
     //console.log(getCountries);
-   
-    
     for(var i=0; i<getCountries.length; i++) {
-        countriesNames.push(getCountries[0].name);
+        countriesNames.push(getCountries[i].name);
     }
 
     console.log(`List of countries name are : ${countriesNames}`);
